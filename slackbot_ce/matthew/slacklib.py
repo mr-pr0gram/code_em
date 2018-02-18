@@ -4,10 +4,11 @@ COMMAND1 = "who is sirtomato"
 COMMAND2 = "talk in binary"
 COMMAND3 = "i dont like you"
 COMMAND4 = "brit"
-COMMAND5 = "h@ck3r_1if3"
+COMMAND5 = "Slack_Stripper V1"
 COMMAND6 = "leaderboard"
-
-
+COMMAND7 = "where did you get that taco"
+COMMAND8 = "do you kno de wae"
+COMMAND9 = "who is WBAgames"
 # Your handling code goes in this function
 def handle_command(command):
     """
@@ -23,10 +24,10 @@ def handle_command(command):
     elif command.find(COMMAND3) >= 0:
         response = "Well, I don't like you either!"
     elif command.find(COMMAND4) >= 0:
-        response = "'Ello!'"
+        response = "'Ello Chump, do you want some tea!'"
     elif command.find(COMMAND5) >= 0:
         response="""
-        Hacking user @noobish_security...%%%%done.%%
+        Hacking user @MACos...%%%%done.%%
 
         downloading fs...%%
         '/home' -- DONE%%
@@ -36,15 +37,8 @@ def handle_command(command):
         '/boot' -- DONE %%
 
         searching for passwords...%%DONE
-        this idiot does not have /etc/shadow...
-        running 'john /etc/passwd'...%%%%%%%%%%DONE
-        root password is 'password123' :%% wow, this guy is so dumb. %%
-        running 'cat rootpass.txt | su -'
-        waiting...%%%%DONE
-        running script...
-        [*] Installing kernel-mode rootkit...%%%%%%DONE
-        [*] Regenerating intrd-2.64.img%%%%
-        [*] Creating hacked initramfs%%
+        DELETING SYSTEM32 AND BOOT FILES 
+        OOooh Browser history!!! EWWWWW NEVERMIND YOU ARE DISGUSTING
         [*] All done. Have a nice day, you hacked fool. Ha Ha Ha! :)"""
     elif command.find(COMMAND6):
         # Custom commandhandler for sirexa
@@ -61,6 +55,12 @@ def handle_command(command):
                 example: `@sirexa leaderboard -notsirtomato`
                 
                 leaderboard: `@sirexa leaderboard points`"""
-        #etc
-        
+        response = ""
+    if command.find(COMMAND7) >= 0:
+        response = "ayee you know bois got his free taco"
+        response = ""
+    if command.find(COMMAND8) >= 0:
+        response = "https://youtu.be/qt8MQRFqxVk  watch me!"
+    if command.find(COMMAND9) >= 0:
+        response = "WBAgames is mostly known west or WBAcubing and is a youtuber who does lots of fun stuff" 
     return response
